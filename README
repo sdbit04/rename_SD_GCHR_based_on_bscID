@@ -1,0 +1,16 @@
+USAGE:
+path\ren_sd_gchr_based_on_bscID.exe "Base_directory path for SD_files" "Base_directory path for GCHR files"
+
+Functionality:
+This script is to automate the following tasks:
+1)
+    Accept the Base directory of cfgmml folder/CFGMML____.zip
+    Extract BSCID from cfgmml folder of CFGMML____.zip.
+    Then it update the value of "System BSCID:" by the extracted BSCID.
+    and rename the CFGMML____.zip incorporating the BSCID into the filename.
+
+2)
+    Accept the Base directory of GCHR folder/*GCHR*.log.zip
+    Extract the BSCID from cfgmml folder of *GCHR*.log.zip
+    and rename the *GCHR*.log.zip incorporating the BSCID into the filename.
+
