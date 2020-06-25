@@ -5,6 +5,7 @@ import shutil
 import zipfile
 import re
 
+
 def rename_sd(root_dir_of_sd):
     root_dir_of_sd = root_dir_of_sd
 
@@ -75,6 +76,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     SD_root_dir = args.SD_root_dir
     gchr_root_dir = args.gchr_root_dir
-    rename_sd(SD_root_dir)
-    rename_gchr(gchr_root_dir)
+    try:
+        rename_sd(SD_root_dir)
+        rename_gchr(gchr_root_dir)
+        print("Process complete")
+    except:
+        print("Exception occurred, need to fix")
 
